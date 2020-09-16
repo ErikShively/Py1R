@@ -1,6 +1,8 @@
 # Py1R
 This is a python implementation of the One Rule classifier.
 One Rule is a binomial classifier, which means it can only classify between two values.
+Credit to Dr. Saed Sayad for the test data and algorithm overview: 
+https://www.saedsayad.com/oner.htm
 ## When to use:
 Generally, something like Naive Bayes will do a better job, and it has multinomial implementations in Sci-Kit Learn. This was done mostly for completion, since Sci-Kit Learn doesn't have an implmentation.
 ## Methods:
