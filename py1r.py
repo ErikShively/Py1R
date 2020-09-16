@@ -1,5 +1,4 @@
 import numpy as np
-import testData
 
 class oneR:
 
@@ -82,7 +81,6 @@ class oneR:
             X,y = np.array(X), np.array(y)
             self.fitShape = X.shape
             self.targets = np.unique(y)
-            countTemplate = dict()
             countTables = []
             topRule = []
             maxAccuracy = 0
@@ -156,9 +154,10 @@ class oneR:
         else:
             return 0
 
-data = testData.testData()
-frame = oneR()
-trained = frame.fit(data.golf_pred,data.golf_target)
-print(trained.predict([
-    ["Sunny", "Mild", "High", "True"],
-    ["Rainy", "Hot", "High", "True"]]))
+if(__name__ == "__main__"):
+    data = testData.testData()
+    frame = oneR()
+    trained = frame.fit(data.golf_pred,data.golf_target)
+    print(trained.predict([
+        ["Sunny", "Mild", "High", "True"],
+        ["Rainy", "Hot", "High", "True"]]))
