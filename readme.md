@@ -37,4 +37,4 @@ Calculates the accuracy of the model, given a set of data to test.
 
 | Returns | Description |
 | --- | --- |
-| accuracy | A float representing (# of correct classified)/(Total classified) |
+| accuracy | A float representing (# of correct classified)/(Total classified)) |
